@@ -1,3 +1,43 @@
-body {
-  background-color: tomato;
+.w-webflow-badge {
+	display: none !important;
+}
+
+a {
+	color: inherit;
+	font-size: inherit;
+	transition: all 0.3s ease;
+	opacity: 1;
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.bg-body img {
+	width: 120%;
+	max-width: none;
+	height: 120%;
+	object-fit: cover;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	animation: 30s linear infinite alternate bg-move;
+}
+
+@keyframes bg-move {
+   0% {
+     transform: translate(-50%, -50%)
+   }
+   25% {
+     transform: translate(-52%, -52%)
+   }
+   50% {
+     transform: translate(-55%, -50%)
+   }
+   75% {
+     transform: translate(-50%, -55%)
+   }
+   100% {
+     transform: translate(-45%, -50%)
+   }
 }
