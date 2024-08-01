@@ -9,7 +9,7 @@ a {
 	opacity: 1;
 
 	&:hover {
-		opacity: 0.7;
+		opacity: 0.75;
 	}
 }
 
@@ -39,6 +39,10 @@ html .xxl {
 	html .xxl {
 		font-size: 55vw;
 	}
+}
+
+.counter:not(.is-visible) {
+	visibility: hidden;
 }
 
 

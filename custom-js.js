@@ -1,19 +1,15 @@
-// const counterUp = window.counterUp.default
+jQuery(function () {
+	counterF();
+});
 
-// const callback = entries => {
-// 	entries.forEach( entry => {
-// 		const el = entry.target
-// 		if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
-// 			counterUp( el, {
-// 				duration: 2000,
-// 				delay: 1000,
-// 			} )
-// 			el.classList.add( 'is-visible' )
-// 		}
-// 	} )
-// }
 
-// const IO = new IntersectionObserver( callback, { threshold: 1 } )
 
-// const el = document.querySelector( '.counter' )
-// IO.observe( el )
+function counterF() {
+	//https://github.com/bfintal/Counter-Up2
+	const counterUp = window.counterUp.default;
+	const el = document.querySelector( '.counter' );
+	counterUp( el, {
+		duration: 4000,
+		delay: 100,
+	})
+}

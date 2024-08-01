@@ -10,7 +10,7 @@ a {
   opacity: 1;
 }
 a:hover {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .bg-body img {
@@ -26,6 +26,24 @@ a:hover {
           transform: translate(-50%, -50%);
   -webkit-animation: 30s linear infinite alternate bg-move;
           animation: 30s linear infinite alternate bg-move;
+}
+
+html .xxl {
+  font-size: 640px;
+}
+
+@media (max-height: 900px) and (min-width: 1201px) {
+  html .xxl {
+    font-size: 65vh;
+  }
+}
+@media (max-width: 1200px) {
+  html .xxl {
+    font-size: 55vw;
+  }
+}
+.counter:not(.is-visible) {
+  visibility: hidden;
 }
 
 @-webkit-keyframes bg-move {
