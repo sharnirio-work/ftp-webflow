@@ -2,8 +2,6 @@ jQuery(function () {
 	counterF();
 });
 
-
-
 function counterF() {
 	//https://github.com/bfintal/Counter-Up2
 	const counterUp = window.counterUp.default;
