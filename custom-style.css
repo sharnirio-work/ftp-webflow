@@ -30,3 +30,21 @@ html .xxl {
 .counter:not(.is-visible) {
   visibility: hidden;
 }
+
+.xxl {
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.bg-body-img {
+  width: 100vw;
+  max-width: none;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}

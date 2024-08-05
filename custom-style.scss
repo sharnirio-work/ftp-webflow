@@ -33,8 +33,22 @@ html .xxl {
 	visibility: hidden;
 }
 
+.xxl {
+	background-clip: text;
+}
 
-// .bg-body img {
+.bg-body-img {
+	width: 100vw;
+	max-width: none;
+	height: 100vh;
+	object-fit: cover;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+// .bg-body-img {
 // 	width: 120vw;
 // 	max-width: none;
 // 	height: 120vh;
